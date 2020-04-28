@@ -12,12 +12,7 @@ CITY_DATA = {'chicago': '/Users/heejeonglim/Downloads/bikeshare-2/chicago.csv',
              'washington': '/Users/heejeonglim/Downloads/bikeshare-2/washington.csv'}
 
 """
-    Ask user to specify a city, month, and day to analyze.
-
-    Return:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
+    Ask user to specify the name of the city, the month, and the day to analyze.
 """
 
 
@@ -44,14 +39,7 @@ def get_filters():
 
 
 """
-    Load data for the specified city and filters by month and day if applicable.
-
-    Args:
-        (str) city - name of the city to analyze
-        (str) month - name of the month to filter by, or "all" to apply no month filter
-        (str) day - name of the day of week to filter by, or "all" to apply no day filter
-    Return
-        df - Pandas DataFrame containing city data filtered by month and day
+    Load data for the specified city name and filters by month and day if applicable.
 """
 
 
@@ -188,7 +176,7 @@ def user_stats(df):
         user_most_common = df["Birth Year"].mode()[0]
         print(f"The earliest year of birth is {user_earliest}, the most recent year of birth is {user_most_recent}, and the most common year of birth is {user_most_common}")
     except:
-        print("\nThere is no Birth Year column.")
+        print("\nThere is no birth year column.")
 
 
 """Display 5 lines of raw data from the csv file for the selected city."""
