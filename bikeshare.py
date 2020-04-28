@@ -44,7 +44,7 @@ def get_filters():
 
 
 """
-    Load data for the specified city and filters by month and day if applicable.
+    Load data for the specified city and filter by month and day if applicable.
 
     Args:
         (str) city - name of the city to analyze
@@ -174,7 +174,7 @@ def user_stats(df):
     user_types = df["User Type"].value_counts()
     print(user_types)
 
-    # To do: display counts of gender
+    # To do: display counts of gender. Used try and except in case the data does not include gender information
     try:
         user_gender = df["Gender"].value_counts()
         print(user_gender)
