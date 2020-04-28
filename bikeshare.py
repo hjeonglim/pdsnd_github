@@ -1,3 +1,8 @@
+"""
+    Import Python pandas and numpy as well as time module for this project
+    
+"""
+
 import pandas as pd
 import numpy as np
 import time

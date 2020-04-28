@@ -1,6 +1,6 @@
 * This project was created on 4/1/2020.
 
-* The title of this project is US-Bikeshare.
+* The US-Bikeshare project is the title of this project
 
 * This project aims to understand the bikeshare system in the Chicago, New York City and Washington D.C. with Python Pandas and Numpy.
 
