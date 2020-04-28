@@ -1,6 +1,6 @@
 """
     Import Python pandas and numpy as well as time module for this project
-    
+
 """
 
 import pandas as pd
@@ -83,7 +83,7 @@ def load_data(city, month, day):
     return df
 
 
-"""Display statistics on the most frequent times of travel."""
+""" Display statistics on the most frequent times of travel. """
 
 
 def time_stats(df):
@@ -191,7 +191,7 @@ def user_stats(df):
         print("\nThere is no Birth Year column.")
 
 
-"""Display 5 lines of raw data from the csv file for the selected city."""
+""" Display 5 lines of raw data from the csv file for the selected city. """
 
 def display_data(df):
     i = 0
@@ -204,7 +204,7 @@ def display_data(df):
         else:
             break
 
-"""Create the main function."""
+""" Create the main function. """
 
 def main():
     while True:
