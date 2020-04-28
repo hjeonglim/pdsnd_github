@@ -1,6 +1,11 @@
+"""
+ Import pandas and numpy as well as time module
+"""
+
 import pandas as pd
 import numpy as np
 import time
+
 
 CITY_DATA = {'chicago': '/Users/heejeonglim/Downloads/bikeshare-2/chicago.csv',
              'new york city': '/Users/heejeonglim/Downloads/bikeshare-2/new_york_city.csv',
@@ -34,7 +39,7 @@ def get_filters():
     while day not in ['all', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday']:
         day = input('Your input is not valid. Please input another day of week: ').lower()
 
-    print('-' * 40)
+    print('-' * 50)
     return city, month, day
 
 
@@ -99,7 +104,7 @@ def time_stats(df):
     print(f'Most frequent hour of travel: {popular_hour}')
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-' * 40)
+    print('-' * 50)
 
 
 """ Display statistics on the most popular stations and trip."""
@@ -125,7 +130,7 @@ def station_stats(df):
     print(f'Most frequent combination of start station and end station trip is {most_popular_route}')
 
     print(f"\nThis took {time.time() - start_time} seconds.")
-    print("-" * 40)
+    print("-" * 50)
 
 
 # Convert seconds into hours, minutes and seconds
